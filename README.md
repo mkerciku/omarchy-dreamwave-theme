@@ -73,3 +73,36 @@ TrueColor / transparency support recommended (termguicolors enabled)
 Complements Hyprland + Waybar + Mako environments
 
 Use alongside blur + rounded corners for full Dreamwave feel
+
+---
+
+### Omarchy 4 port
+
+Omarchy 4 reads a theme's look from `colors.toml`, `hyprland.lua` and
+`shell.*.toml` instead of `hyprland.conf`, `waybar.css`, `walker.css` and
+`mako.ini` (kept for older versions). This fork adds:
+
+| File | What it does |
+|------|--------------|
+| `colors.toml` | The Dreamwave palette for every app Omarchy themes |
+| `hyprland.lua` | Lavender border, rounding 16, see-through blurred windows, dimmed inactive windows, overshoot animations, blurred bar/menus/notifications |
+| `foot.ini` | See-through foot background so Hyprland blurs behind it |
+| `shell.*.toml` | Bar, launcher, menu, notification, OSD and lock colours |
+| `extras/local.pill-bar/` | Bar plugin that draws an outlined pill behind each bar widget |
+| `extras/hooks/20-dreamwave-pill-bar` | Theme hook: pill bar for Dreamwave, stock bar for other themes |
+
+`omarchy theme install` drops Lua and terminal configs from themes cloned from
+a repo, so to get the full look, clone the repo and link it in as your own
+theme:
+
+```bash
+git clone https://github.com/mkerciku/omarchy-dreamwave-theme.git ~/Projects/Themes/omarchy-dreamwave-theme
+ln -s ~/Projects/Themes/omarchy-dreamwave-theme ~/.config/omarchy/themes/dreamwave
+cp -r ~/Projects/Themes/omarchy-dreamwave-theme/extras/local.pill-bar ~/.config/omarchy/plugins/
+omarchy hook install theme-set ~/Projects/Themes/omarchy-dreamwave-theme/extras/hooks/20-dreamwave-pill-bar
+omarchy theme set dreamwave
+omarchy bar use local.pill-bar
+```
+
+A linked theme runs its Lua unrestricted, so review upstream changes before
+pulling them into the clone.

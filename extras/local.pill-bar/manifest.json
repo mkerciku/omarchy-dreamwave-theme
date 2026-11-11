@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "local.pill-bar",
+  "name": "Pill bar",
+  "version": "1.0.0",
+  "author": "local",
+  "description": "The stock Omarchy bar with an outlined pill behind each widget",
+  "kinds": ["bar"],
+  "entryPoints": {
+    "bar": "Bar.qml"
+  }
+}

@@ -1,0 +1,7 @@
+# Dreamwave flyouts and OSD: the theme's SwayOSD colours.
+[popups]
+background       = "#0a0716"
+background-alpha = 0.9
+text             = "#f5eafd"
+border           = "#8c53b7"
+border-alpha     = 1.0

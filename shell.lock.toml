@@ -1,0 +1,13 @@
+# Dreamwave lock screen: the theme's Hyprlock colours.
+[lock]
+background       = "#0a0716"
+background-alpha = 0.67
+text             = "#f5eafd"
+placeholder      = "#c3b9cb"
+text-error       = "#f1279f"
+border           = "#a604e9"
+border-active    = "#c429b2"
+border-error     = "#f1279f"
+border-alpha     = 1.0
+selection        = "#a604e9"
+selection-alpha  = 0.45

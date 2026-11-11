@@ -1,0 +1,14 @@
+# Dreamwave launcher: the theme's Walker colours, frosted.
+[launcher]
+background                = "#0a0716"
+background-alpha          = 0.85
+text                      = "#f5eafd"
+border                    = "#f5eafd"
+border-alpha              = 1.0
+scrim                     = "#0a0716"
+scrim-alpha               = 0.4
+selected-background       = "#232936"
+selected-background-alpha = 0.8
+selected-text             = "#ca2cb0"
+selected-border           = "#ca2cb0"
+selected-border-alpha     = 0.4
