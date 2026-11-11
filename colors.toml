@@ -1,0 +1,40 @@
+mode = "dark"
+
+# Dreamwave palette, taken from the theme's alacritty.toml so every app
+# Omarchy themes from colors.toml matches the terminals.
+
+accent = "#a604e9"
+selection = "#3b1f5c"
+selection_background = "#3b1f5c"
+selection_foreground = "#f5eafd"
+muted = "#8c53b7"
+
+background = "#0a0716"
+dark_background = "#07050f"
+darker_background = "#040309"
+lighter_background = "#1a1230"
+
+foreground = "#f5eafd"
+dark_foreground = "#a08cbf"
+light_foreground = "#e2cff5"
+bright_foreground = "#f5eafd"
+
+# Soft lavender-white window border from the theme's hyprland.conf. The shell
+# reuses it for notification, menu and lock borders.
+hyprland_active_border = "rgba(f5eafdee)"
+
+red = "#a70b68"
+yellow = "#790aac"
+orange = "#ef6469"
+green = "#7f049e"
+cyan = "#c429b2"
+blue = "#ca2cb0"
+magenta = "#a604e9"
+brown = "#5c2a4f"
+
+bright_red = "#f1279f"
+bright_yellow = "#b52af3"
+bright_green = "#c911f8"
+bright_cyan = "#ef6469"
+bright_blue = "#e37bd1"
+bright_magenta = "#cc58fc"

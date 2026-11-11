@@ -1,0 +1,9 @@
+# Dreamwave notifications: the theme's Mako colours.
+[notifications]
+background       = "#0a0716"
+background-alpha = 0.9
+text             = "#f5eafd"
+border           = "#a604e9"
+border-alpha     = 1.0
+border-width     = 2
+countdown        = "#c429b2"

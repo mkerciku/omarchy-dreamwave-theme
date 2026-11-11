@@ -1,0 +1,13 @@
+# Dreamwave bar: the theme's Waybar colours, slightly see-through so the
+# blur from hyprland.lua shows behind it.
+[bar]
+background       = "#121212"
+background-alpha = 0.85
+text             = "#f5eafd"
+active           = "#f1279f"
+scale-with-font  = true
+size-horizontal  = 32
+# Wider icon slots leave room between the outlined pills of the
+# local.pill-bar bar plugin.
+icon-slot        = 38
+size-vertical    = 28

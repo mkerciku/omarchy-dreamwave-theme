@@ -1,0 +1,13 @@
+#!/bin/bash
+# Dreamwave's outlined bar pills: use the local.pill-bar bar plugin while
+# Dreamwave is the theme, and Omarchy's own bar for every other theme.
+theme="$1"
+config="$HOME/.config/omarchy/shell.json"
+current=$(jq -r '.bar.id // "omarchy.bar"' "$config" 2>/dev/null)
+
+if [[ $theme == "dreamwave" ]]; then
+  [[ -f $HOME/.config/omarchy/plugins/local.pill-bar/manifest.json ]] || exit 0
+  [[ $current == "local.pill-bar" ]] || omarchy bar use local.pill-bar >/dev/null
+elif [[ $current == "local.pill-bar" ]]; then
+  omarchy bar reset >/dev/null
+fi
